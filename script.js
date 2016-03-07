@@ -21,6 +21,9 @@ angular.module('shimmy', ['ngRoute'])
 	})
 
 
+	
+
+
 /*var app = angular.module('bellyDance', ['ngRoute']);
 app.config(function($routeProvider) {
 $routeProvider

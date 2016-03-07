@@ -1,13 +1,13 @@
 var app =angular.module('shimmy');
 	app.factory('inputService', function(){
-		var input =  "";
-		var	 noun= "";
+		var input = [];
+		//var	 noun= "";
 		
 
 		return {
-			setInput:function(viewInput,viewNoun) {
-			    input = viewInput;
-			    noun = viewNoun;
+			setInput:function(viewInput) {
+			    input.push(viewInput);
+			    //noun = viewNoun;
 				console.log(input);
 				//console.log(noun);
 
@@ -17,7 +17,7 @@ var app =angular.module('shimmy');
 				return input;
 
 			},
-			getNoun:function(){
+			/*getNoun:function(){
 				return noun;
 
 			},

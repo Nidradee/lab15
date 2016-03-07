@@ -2,9 +2,21 @@ var app =angular.module("shimmy")
 
 app.controller("shimmySparkle", function ($scope,inputService){
 	$scope.clickMe= function(){
-		console.log($scope.input)
-		inputService.setInput($scope.input)
-		inputService.setInput($scope.noun)
+		var inputs= [
+			$scope.input,
+			$scope.noun,
+			$scope.verb,
+			$scope.adj,
+			$scope.phase,
+			$scope.word,
+			$scope.name,
+
+		];
+
+		inputs.forEach(function(sparkleElements){
+			inputService.setInput(sparkleElements);
+		});
+
 		/*inputService.setInput($scope.verb)
 		inputService.setInput($scope.adj)
 		inputService.setInput($scope.phase)

@@ -1,6 +1,6 @@
 <!DOCtype>
 <html>
-<head>
+
 <script src="lib/angular.min.js"></script>
 <script src="lib/angular-route.js"></script>
 	<title>Lab 15</title>
@@ -10,7 +10,13 @@
 {{1+1}}
 <a href="#/shimmySparkle">Sparkle</a>
 <a href="#/shimmyShake">Shake</a>
-<a href="#/extrenalData">Data</a>
+<a href="#/externalData">Data</a>
+
+<!---<div ng-controller="externalData">
+    <ul ng-repeat="data in myData">
+      <li>{{data}}</li>
+    </ul>
+  </div> -->
 
 <ng-view></ng-view>
 
@@ -25,5 +31,6 @@
 <script type="text/javascript" src="service.js"></script>
 <script type="text/javascript" src="sparkle.js"></script>
 <script type="text/javascript" src="shake.js"></script>
+<script type="text/javascript" src="exData.js"></script>
 </body>
 </html>

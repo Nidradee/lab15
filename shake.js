@@ -1,9 +1,9 @@
  var app=angular.module("shimmy")
 
 app.controller("shimmyShake",function ($scope,inputService){
-
-	$scope.display= inputService.getInput();
-	$scope.display= inputService.getNoun();
+	//var inputSerivce = myService.get();
+	$scope.display = inputService.getInput();
+	/*$scope.displayNoun= inputService.getNoun();
 	/*$scope.display= inputService.getVerb();
 	$scope.display= inputService.getAdj();
 	$scope.display= inputService.getPhase();
