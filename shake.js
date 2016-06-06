@@ -1,4 +1,4 @@
- var app=angular.module("shimmy")
+ var app = angular.module("dance");
 
 app.controller("shimmyShake",function ($scope,inputService){
 	//var inputSerivce = myService.get();

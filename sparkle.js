@@ -1,4 +1,4 @@
-var app =angular.module("shimmy")
+var app = angular.module("dance", ['ngRoute']);
 
 app.controller("shimmySparkle", function ($scope,inputService){
 	$scope.clickMe= function(){

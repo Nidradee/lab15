@@ -1,18 +1,19 @@
-angular.module('shimmy', ['ngRoute'])
-	.config(function($routeProvider) {
+var app = angular.module('dance', ['ngRoute']);
+
+	app.config(function($routeProvider) {
 		$routeProvider.when("/shimmySparkle",
 		{
 			controller: "shimmySparkle",
 			templateUrl:"shimmySparkle.html",
-		});
+		})
 
-		$routeProvider.when("/shimmyShake",
+		.when("/shimmyShake",
 		{
 			controller: "shimmyShake",
 			templateUrl:"shimmyShake.html",
-		});
+		})
 
-		$routeProvider.when("/externalData",
+		.when("/externalData",
 		{
 			controller: "externalData",
 			templateUrl:"externalData.html",
@@ -21,7 +22,7 @@ angular.module('shimmy', ['ngRoute'])
 	})
 
 
-	
+
 
 
 /*var app = angular.module('bellyDance', ['ngRoute']);

@@ -1,7 +1,7 @@
-/*var = app angular.module("shimmy")
+var app = angular.module("dance");
 
 app.controller("externalData", function ($scope,$http){
-	$http.get("data.json").success(function (response){
+	$http.get("https://twlaas.herokuapp.com/").success(function (response){
 		$scope.myData = response;
 	});
 

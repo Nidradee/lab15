@@ -1,4 +1,4 @@
-var app =angular.module('shimmy');
+var app = angular.module('dance');
 	app.factory('inputService', function(){
 		var input = [];
 		//var	 noun= "";
